@@ -1,4 +1,5 @@
 import React from "react";
+import "./Controls.css";
 
 const Controls = ({ onIncrement, onDescrement }) => (
   <div className="Counter__controls">
