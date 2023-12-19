@@ -1,8 +1,7 @@
 import React from "react";
 import "./Counter.css";
-import "./Controls/Controls";
-import Controls from "./Controls/Controls";
-import Value from "./Value/Value";
+import Controls from "./Controls";
+import Value from "./Value";
 
 class Counter extends React.Component {
   // стартовое дефолтное значение счетчика, то есть если стартовое не передали:

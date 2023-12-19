@@ -1,10 +1,10 @@
 import "./App.css";
-import Counter from "./components/Counter/Counter";
-// import Dropdown from "./components/Dropdown/Dropdown";
-// import ColorPicker from "./components/ColorPicker/ColorPicker";
+import Counter from "./components/Counter";
+import Dropdown from "./components/Dropdown";
+import ColorPicker from "./components/ColorPicker";
 // import TodoList from "./components/TodoList/TodoList";
 
-const ColorPicker = [
+const ColorPickerOptons = [
   { label: "red", color: "#F44336" },
   { label: "green", color: "#4CAF50" },
   { label: "blue", color: "#2196F3" },
@@ -17,10 +17,10 @@ function App() {
   return (
     <div className="App">
       <h1>Состояние компонента</h1>
-      <Counter initialValue={100} />
+      <Counter initialValue={0} />
+      <ColorPicker options={ColorPickerOptons} />
+      <Dropdown />
 
-      {/* <Dropdown /> */}
-      {/* <ColorPicker /> */}
       {/* <TodoList /> */}
     </div>
   );
