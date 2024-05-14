@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import classNames from "classnames";
 import "./ColorPicker.css";
+
 
 class ColorPicker extends Component {
   state = {
@@ -7,6 +9,13 @@ class ColorPicker extends Component {
   };
 
   makeOptioClassName = (index) => {
+
+    // Делаем динамические классы через библиотеку classnames (для sas, для можулей немного по другому)
+
+    // return classNames("ColorPicker__options", {
+    //   "ColorPicker__options--active": index === this.state.activeOptionIDX,
+    // });
+
     const optionClasses = ["ColorPicker__options"];
     if (index === this.state.activeOptionIDX) {
       optionClasses.push("ColorPicker__options--active");
